@@ -1,5 +1,5 @@
-/**
- * Granville Borough Council - Parking Permit Portal
+﻿/**
+ * Northborough Council - Parking Permit Portal
  * Interaction Logic
  */
 
@@ -11,15 +11,15 @@ document.addEventListener('DOMContentLoaded', () => {
     theme: 'light',
     postcodeDb: {
       'GR1 3AA': [
-        '12 Baker Street, Granville, GR1 3AA',
-        '14 Baker Street, Granville, GR1 3AA',
-        '16 Baker Street, Granville, GR1 3AA',
-        '18 Baker Street, Granville, GR1 3AA'
+        '12 Baker Street, Northborough, GR1 3AA',
+        '14 Baker Street, Northborough, GR1 3AA',
+        '16 Baker Street, Northborough, GR1 3AA',
+        '18 Baker Street, Northborough, GR1 3AA'
       ],
       'GR1 3AB': [
-        'Flat 1, Royal Crescent, Granville, GR1 3AB',
-        'Flat 2, Royal Crescent, Granville, GR1 3AB',
-        'Flat 3, Royal Crescent, Granville, GR1 3AB'
+        'Flat 1, Royal Crescent, Northborough, GR1 3AB',
+        'Flat 2, Royal Crescent, Northborough, GR1 3AB',
+        'Flat 3, Royal Crescent, Northborough, GR1 3AB'
       ],
       'W1B 2EL': [
         '10 Downing Chambers, London, W1B 2EL',
@@ -462,7 +462,7 @@ document.addEventListener('DOMContentLoaded', () => {
           createToast('Addresses Found', `Retrieved ${results.length} addresses for ${pc}.`, 'success');
         } else {
           // Default fallbacks for unrecognized postcode to simulate
-          const fallbackAddress = `101 Green Lane, Granville, ${pc}`;
+          const fallbackAddress = `101 Green Lane, Northborough, ${pc}`;
           const opt = document.createElement('option');
           opt.value = fallbackAddress;
           opt.textContent = fallbackAddress;
@@ -1007,3 +1007,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 300);
   }
 });
+
